@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y wget supervisor
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends xz-utils fontconfig libfreetype6 libx11-6 libxext6 libxrender1 && \
-    wget http://apps.nesbilgi.com.tr/wkhtmltox-0.12.4_linux-generic-amd64.tar && \
+    wget https://github.com/nesbilgi/docker-examples/raw/master/wkhtmltox-0.12.4_linux-generic-amd64.tar && \
     tar xf wkhtmltox-0.12.4_linux-generic-amd64.tar && \
     mv wkhtmltox/bin/wkhtmltopdf /usr/bin/ && \
     rm -rf wkhtmltox-0.12.4_linux-generic-amd64.tar && \
