@@ -18,11 +18,11 @@ Go to root folder of repository then run command;
 
 **Asp .Net core**
 ```sh
-docker build -t nesbilgi/alpine/netcore:2.2.5  -f alpine/aspnetcore/2.2.5/Dockerfile .
+docker build -t nesbilgi/alpine:netcore-2.2.5  -f alpine/aspnetcore/2.2.5/Dockerfile .
 ```
 
 **.Net core**
 ```sh
-docker build -t nesbilgi/alpine/netcore:2.2.5  -f alpine/netcore/2.2.5/Dockerfile .
+docker build -t nesbilgi/alpine:netcore-2.2.5  -f alpine/netcore/2.2.5/Dockerfile .
 ```
 
