@@ -13,9 +13,14 @@ RUN set -xe && \
 
 # # # # # # # # # # # # # # # # # # # # # # #
 # INSTALL WKHTMLTOPDF 
-RUN set -xe && \
-    apk add --no-cache --purge -uU wkhtmltopdf && \
+RUN apk add --update --no-cache \
+    libstdc++ libx11 glib libxrender libxext 
+RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.8/main' >> /etc/apk/repositories && \
+    apk add --no-cache libcrypto1.0 libssl1.0 ttf-liberation ttf-freefont ttf-ubuntu-font-family && \
     rm -rf /var/cache/apk/* /tmp/*
+
+# Dependencies folder
+COPY ../../../deps/wkhtmltopdf /bin
 
 
 # # # # # # # # # # # # # # # # # # # # # # #
