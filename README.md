@@ -25,3 +25,4 @@ docker build -t nesbilgi/alpine/netcore:2.2.5  -f alpine/aspnetcore/2.2.5/Docker
 ```sh
 docker build -t nesbilgi/alpine/netcore:2.2.5  -f alpine/netcore/2.2.5/Dockerfile .
 ```
+
