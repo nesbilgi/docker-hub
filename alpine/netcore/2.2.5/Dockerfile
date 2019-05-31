@@ -20,7 +20,7 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.8/main' >> /etc/apk/repositori
     rm -rf /var/cache/apk/* /tmp/*
 
 # Dependencies folder
-COPY ../../../deps/wkhtmltopdf /bin
+COPY deps/wkhtmltopdf /bin
 
 
 # # # # # # # # # # # # # # # # # # # # # # #
