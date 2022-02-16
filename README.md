@@ -26,6 +26,8 @@ docker build -t nesbilgi/debian:aspnet-3.1.4 -f debian/dotnet/aspnet/3.1.4/Docke
 docker build -t nesbilgi/debian:aspnet-5.0.0 -f debian/dotnet/aspnet/5.0.0/Dockerfile .
 ```
 
+> Cpu is Apple Silicon, add parameter `--platform linux/amd64`
+
 **runtime**
 
 ```sh
