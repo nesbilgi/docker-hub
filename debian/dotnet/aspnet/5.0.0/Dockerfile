@@ -8,6 +8,10 @@ ENV MAIN_PACKAGES fontconfig libfreetype6 libjpeg62-turbo libxext6 libpng16-16 l
 
 COPY deps/$WKHTMLTOX /
 
+RUN rm -f /etc/localtime \
+&& ln -sv /usr/share/zoneinfo/Europe/Istanbul /etc/localtime \
+&& echo "Europe/Istanbul" > /etc/timezone
+
 RUN set -xe \
 	&& apt-get update -qq \
 	&& apt-get install --no-install-recommends -yq $BUILD_PACKAGES $MAIN_PACKAGES \
