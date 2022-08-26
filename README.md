@@ -24,6 +24,8 @@ docker build -t nesbilgi/alpine:aspnetcore-2.2.5  -f alpine/aspnetcore/2.2.5/Doc
 docker build -t nesbilgi/debian:aspnet-3.1.4 -f debian/dotnet/aspnet/3.1.4/Dockerfile .
 
 docker build -t nesbilgi/debian:aspnet-5.0.0 -f debian/dotnet/aspnet/5.0.0/Dockerfile .
+
+docker build -t nesbilgi/debian:aspnet-6.0 -f debian/dotnet/aspnet/6.0/Dockerfile .
 ```
 
 > Cpu is Apple Silicon, add parameter `--platform linux/amd64`
@@ -36,6 +38,8 @@ docker build -t nesbilgi/alpine:netcore-2.2.5  -f alpine/netcore/2.2.5/Dockerfil
 docker build -t nesbilgi/debian:runtime-3.1.4 -f debian/dotnet/runtime/3.1.4/Dockerfile .
 
 docker build -t nesbilgi/debian:runtime-5.0.0 -f debian/dotnet/runtime/5.0.0/Dockerfile .
+
+docker build -t nesbilgi/debian:runtime-6.0 -f debian/dotnet/runtime/6.0/Dockerfile .
 
 ```
 
