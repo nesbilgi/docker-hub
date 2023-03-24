@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0
 # INSTALL WKHTMLTOPDF
 ENV WKHTMLTOX wkhtmltox_0.12.5-1.buster_amd64.deb
 ENV BUILD_PACKAGES build-essential
-ENV MAIN_PACKAGES fontconfig libfreetype6 libjpeg62-turbo libxext6 libpng16-16 libx11-6 libxcb1  libxrender1 xfonts-75dpi xfonts-base 
+ENV MAIN_PACKAGES fontconfig libfreetype6 libjpeg62-turbo libxext6 libpng16-16 libx11-6 libxcb1  libxrender1 xfonts-75dpi xfonts-base p7zip-full 
 
 COPY deps/$WKHTMLTOX /
 
