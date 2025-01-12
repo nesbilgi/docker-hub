@@ -29,6 +29,8 @@ docker build -t nesbilgi/debian:aspnet-6.0 -f debian/dotnet/aspnet/6.0/Dockerfil
 
 docker build -t nesbilgi/debian:aspnet-8.0 -f debian/dotnet/aspnet/8.0/Dockerfile .
 
+docker build -t nesbilgi/debian:aspnet-8.0-chrome-driver -f debian/dotnet/aspnet/8.0-with-chrome-driver/Dockerfile .
+
 docker build -t nesbilgi/debian:aspnet-9.0 -f debian/dotnet/aspnet/9.0/Dockerfile .
 ```
 
